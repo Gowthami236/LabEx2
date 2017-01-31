@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity implements ActionBarActivity {
+public class MainActivity extends ActionBarActivity {
 	TextView text;
 	EditText ed;
 	Button zero;
