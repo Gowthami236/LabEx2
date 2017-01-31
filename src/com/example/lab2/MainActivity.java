@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity implements ActionBarActivity {
 	TextView text;
 	EditText ed;
 	Button zero;
@@ -24,11 +24,10 @@ public class MainActivity extends ActionBarActivity {
 	 
     boolean mAdd , mSub ,mMul ,mDiv ;
  
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ed=(EditText) findViewById(R.id.editText1);
+        ed=(EditText)  findViewById(R.id.editText1);
         text=(TextView) findViewById(R.id.text1);
         zero=(Button) findViewById(R.id.zero);
         one=(Button) findViewById(R.id.one);
@@ -200,5 +199,15 @@ public class MainActivity extends ActionBarActivity {
             }
         });
     }
+
+	private void setContentView(int activityMain) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private Button findViewById(int zero2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
  
 }   					
