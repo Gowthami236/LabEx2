@@ -124,7 +124,7 @@ public class MainActivity extends ActionBarActivity {
             // Read the expression
             String txt = txtScreen.getText().toString();
             // Create an Expression (A class from exp4j library)
-            Expression expression = new ExpressionBuilder(txt).build();
+       
             try {
                 // Calculate the result and display
                 double result = expression.evaluate();
