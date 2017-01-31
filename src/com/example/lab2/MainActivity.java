@@ -2,6 +2,7 @@ package com.example.lab2;
 
 
 import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity implements ActionBarActivity {
+public class MainActivity extends Activity {
+
 	TextView text;
 	EditText ed;
 	Button zero;
@@ -24,10 +26,11 @@ public class MainActivity implements ActionBarActivity {
 	 
     boolean mAdd , mSub ,mMul ,mDiv ;
  
-    public void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ed=(EditText)  findViewById(R.id.editText1);
+        ed=(EditText) findViewById(R.id.editText1);
         text=(TextView) findViewById(R.id.text1);
         zero=(Button) findViewById(R.id.zero);
         one=(Button) findViewById(R.id.one);
@@ -199,15 +202,6 @@ public class MainActivity implements ActionBarActivity {
             }
         });
     }
-
-	private void setContentView(int activityMain) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private Button findViewById(int zero2) {
-		// TODO Auto-generated method stub
-		return null;
-	}
  
-}   					
+
+}
